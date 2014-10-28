@@ -1,0 +1,14 @@
+<template name="layout">
+<body>
+
+<div class="container">
+  {{> header}}
+  {{> landingJumbo}}
+
+    <div id="main" class="row-fluid">
+      {{> yield}}
+    </div>
+</div>
+
+</body>
+</template>
