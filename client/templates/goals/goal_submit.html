@@ -1,0 +1,30 @@
+<template name="goalSubmit">
+  <form class="main form">
+    <div class="form-group">
+      <label class="control-label" for="name">Name</label>
+      <div class="controls">
+          <input name="name" id="name" type="text" value="" placeholder="Goal name" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="description">Description</label>
+      <div class="controls">
+          <input name="description" id="description" type="text" value="" placeholder="Describe your goal" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="purpose">Purpose</label>
+         <div class="controls">
+          <input name="purpose" id="purpose" type="text" value="" placeholder="Why is this goal important?" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="dueDate">Purpose</label>
+         <div class="controls">
+          <input name="dueDate" id="dueDate" type="date" value="" placeholder="" class="form-control"/>
+      </div>
+    </div>
+    
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</template>
