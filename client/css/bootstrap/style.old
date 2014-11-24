@@ -23,7 +23,14 @@ body {
     -moz-border-radius: 0px 0px 3px 3px;
     -ms-border-radius: 0px 0px 3px 3px;
     -o-border-radius: 0px 0px 3px 3px;
-    border-radius: 0px 0px 3px 3px; }
+    border-radius: 0px 0px 3px 3px; 
+    
+    background-image: none;
+    background-color: #1f5b73;
+    
+}
+
+
 
 #spinner {
     height: 300px; }
