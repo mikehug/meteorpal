@@ -1,30 +1,71 @@
 <template name="goalSubmit">
-  <form class="main form">
-    <div class="form-group">
-      <label class="control-label" for="name">Name</label>
-      <div class="controls">
-          <input name="name" id="name" type="text" value="" placeholder="Goal name" class="form-control"/>
-      </div>
+    <div class="container-fluid">
+        <blockquote class="pull-right">
+          <p>"Setting goals is the first step in turning the invisible into the visible." </p>
+          <small>Tony Robbins<cite title="Source Title"></cite></small>
+        </blockquote>
+        <div class="page-header">
+              <h2>Goal Creation</h2>
+        </div>
+          <div class="col-md-4">
+                   <h4>Set a <strong>SMART</strong> goal</h4>
+                    <p><strong>Specific:</strong> Goals should be simplistically written and clearly define what you are going to do. </p>
+                    
+                    <p><strong>Measurable:</strong> Goals should be measurable so that you have tangible evidence that you have accomplished the
+                    goal. Usually, the entire goal statement is a measure for the project, but there are usually several
+                    short-term or smaller measurements built into the goal. </p>
+                    
+                    <p><strong>Achievable:</strong> Goals should be measurable so that you have tangible evidence that you have accomplished the
+                    goal. Usually, the entire goal statement is a measure for the project, but there are usually several
+                    short-term or smaller measurements built into the goal. </p>
+                    
+                    <p><strong>Results-focused:</strong> Goals should measure outcomes, not activities. </p>
+                    
+                    <p><strong>Time-bound:</strong> Goals should be linked to a timeframe that creates a practical sense of urgency, or results in tension
+                    between the current reality and the vision of the goal. Without such tension, the goal is unlikely to
+                    produce a relevant outcome. </p>
+           
+           </div>
+           <div class="col-md-8 well">
+             <form class="form-horizontal">
+              <legend>Goal Details</legend>
+               
+                <fieldset class="col-md-offset-1">
+                
+                        <div class="form-group">
+                          <label class="control-label col-md-2" for="name">Name</label>
+                          <div class="controls col-md-9">
+                              <input name="name" id="name" type="text" value="" placeholder="Goal name" class="form-control"/>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-2" for="description">Description</label>
+                          <div class="controls col-md-9">
+                              <textarea name="description" id="description" placeholder="Describe your goal" class="form-control" rows="5"> </textarea>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="purpose">Purpose</label>
+                             <div class="controls col-md-9">
+                              <textarea name="purpose" id="purpose" placeholder="Why is this goal important?" class="form-control" rows="5"> </textarea>
+                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="dueDate">Due Date</label>
+                             <div class="controls col-md-9">
+                              <input name="dueDate" id="dueDate" type="date" value="" placeholder="When will it be completed?" class="form-control"/>
+                          </div>
+                        </div>
+                        
+                        
+                        <input type="submit" value="Save" class="btn btn-primary "/>
+                        
+                </fieldset>
+             </form>
+            </div>
+            
+            
+   
     </div>
-    <div class="form-group">
-      <label class="control-label" for="description">Description</label>
-      <div class="controls">
-          <input name="description" id="description" type="text" value="" placeholder="Describe your goal" class="form-control"/>
-      </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label" for="purpose">Purpose</label>
-         <div class="controls">
-          <input name="purpose" id="purpose" type="text" value="" placeholder="Why is this goal important?" class="form-control"/>
-      </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label" for="dueDate">Due Date</label>
-         <div class="controls">
-          <input name="dueDate" id="dueDate" type="date" value="" placeholder="When will it be completed?" class="form-control"/>
-      </div>
-    </div>
-    
-    <input type="submit" value="Submit" class="btn btn-primary"/>
-  </form>
 </template>

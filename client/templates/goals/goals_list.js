@@ -1,5 +1,5 @@
-Template.postsList.helpers({
+Template.goalsList.helpers({
     goals: function() {
-        return Goals.find();
+        return Goals.find({userId : Meteor.userId()})
     }
 });
