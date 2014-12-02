@@ -23,3 +23,15 @@ Template.goalSubmit.events({
         });
   }
 });
+
+
+Template.goalSubmit.rendered = function () {
+  if (!Modernizr.inputtypes.date) {
+    $('input[type=date]').datetimepicker({
+					pickTime: false
+				});
+}
+
+};
+
+  

@@ -1,7 +1,7 @@
 <template name="goalItem">
-    <tr>
-        <td>{{name}}</td>
+       <tr>
+            <td><a href="{{pathFor 'goalPage'}}">{{name}}</a></td>
         <td>{{description}}</td>
         <td>{{formatTime dueDate}}</td>
-    </tr>
+       </tr>
 </template>
